@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julieta Rodriguez — Portafolio</title>
-  <link rel="stylesheet" href="./styles/normalize.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>Julieta Rodríguez — Portafolio 2026</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page" id="inicio">
     <header class="hero">
       <div class="hero__content">
-        <h1 class="hero__title">Julieta Rodriguez</h1>
-        <p class="hero__subtitle">Desarrolladora Full-Stack Junior | TypeScript, React, Node.js</p>
+        <p class="eyebrow">PORTAFOLIO · 2026</p>
+        <h1 class="hero__title">
+          <span>Julieta</span>
+          <span>Rodríguez<span class="hero__period">.</span></span>
+        </h1>
+        <p class="hero__subtitle">Desarrolladora Full-Stack Junior <span>|</span> TypeScript, React, Node.js</p>
         <p class="hero__bio">
-          Desarrolladora web junior con experiencia práctica creando interfaces limpias y responsivas con HTML, CSS, JavaScript y React, así como implementando lógica básica de back-end.
+          Desarrolladora web con experiencia práctica creando interfaces limpias y responsivas.
+          Me gusta trabajar con HTML, CSS, JavaScript y React, así como implementar lógica básica
+          de back-end. Disfruto colaborar en equipo, mantener un código claro y resolver problemas
+          de forma estructurada. Motivada por seguir aprendiendo, asumir nuevos retos y crecer como desarrolladora.
         </p>
         <nav class="hero__actions" aria-label="Enlaces principales">
-          <a class="hero__link" href="#cv">Descargar CV</a>
-          <a class="hero__link" href="#github">Enlace a GitHub</a>
-          <a class="hero__link" href="#contacto">Hablemos</a>
+          <!-- Cambia la ruta del PDF por el nombre real de tu CV. -->
+          <a class="text-link" href="./documents/CV-Julieta-Rodriguez.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          <a class="text-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Enlace a GitHub</a>
+          <a class="text-link" href="#contacto">Hablemos</a>
         </nav>
       </div>
+
       <div class="hero__media">
-        <img class="hero__avatar" src="./images/Rectangle 3.png" alt="Retrato de Julieta Rodriguez" />
+        <img class="hero__avatar" src="./images/julietarodriguez1.png" alt="Retrato de Julieta Rodríguez">
       </div>
     </header>
 
@@ -31,42 +41,52 @@
       <section class="skills" aria-labelledby="skills-title">
         <h2 class="section-title" id="skills-title">Habilidades y herramientas</h2>
         <ul class="skills__list">
-          <li class="skills__item"><img src="./images/html5.svg" alt="HTML5" /></li>
-          <li class="skills__item"><img src="./images/css3.svg" alt="CSS3" /></li>
-          <li class="skills__item"><img src="./images/js.svg" alt="JavaScript" /></li>
-          <li class="skills__item"><img src="./images/React.svg" alt="React" /></li>
-          <li class="skills__item"><img src="./images/git.svg" alt="Git" /></li>
-          <li class="skills__item"><img src="./images/Github.svg" alt="GitHub" /></li>
-          <li class="skills__item"><img src="./images/chatgpt.svg" alt="ChatGPT" /></li>
-          <li class="skills__item"><img src="./images/Union.svg" alt="Herramienta" /></li>
-        </ul>
+          <li class="skills__item"><img src="./images/html5.svg" alt="HTML5" loading="lazy"></li>
+          <li class="skills__item"><img src="./images/css3.svg" alt="CSS3" loading="lazy"></li>
+          <li class="skills__item"><img src="./images/js.svg" alt="JavaScript" loading="lazy"></li>
+          <li class="skills__item"><img src="./images/React.svg" alt="React" loading="lazy"></li>
+          <li class="skills__item"><img src="./images/git.svg" alt="Git" loading="lazy"></li>
+          <li class="skills__item"><img src="./images/Github.svg" alt="GitHub" loading="lazy"></li>
+          <li class="skills__item"><img src="./images/chatgpt.svg" alt="ChatGPT" loading="lazy"></li>
       </section>
 
       <section class="projects" aria-labelledby="projects-title">
         <h2 class="section-title" id="projects-title">Proyectos destacados</h2>
         <div class="projects__grid">
           <article class="card">
-            <img class="card__image" src="./images/Rectangle 5.png" alt="Página web de una cafetería" />
+            <div class="card__visual card__visual--cafe" role="img" aria-label="Vista previa del proyecto de cafetería">
+              <div class="cafe-preview">
+                <span class="preview-kicker">Café de especialidad</span>
+                <strong>en Triple Peaks</strong>
+                <span class="preview-copy">Un espacio para disfrutar, crear y compartir.</span>
+                <span class="preview-cup" aria-hidden="true">☕</span>
+              </div>
+            </div>
             <div class="card__body">
               <h3 class="card__title">Página web de una cafetería</h3>
               <p class="card__text">
                 Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño.
+                Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional. Implementé desde cero el diseño completo de la página,
+                organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.
               </p>
               <div class="card__links">
-                <a class="card__link" href="#demo-1">Demo en vivo</a>
-                <a class="card__link" href="#repo-1">GitHub</a>
+                <a class="card__link card__link--accent" href="#" target="_blank" rel="noopener noreferrer">↗ Demo en vivo</a>
+                <a class="card__link" href="https://github.com/" target="_blank" rel="noopener noreferrer">◉ GitHub</a>
               </div>
             </div>
           </article>
 
           <article class="card">
-            <img class="card__image" src="./images/Rectangle 5.png" alt="Mi proyecto" />
+            <div class="card__visual card__visual--code" role="img" aria-label="Ilustración de código para el segundo proyecto">
+              <div class="code-symbol" aria-hidden="true">&lt;/&gt;</div>
+            </div>
             <div class="card__body">
               <h3 class="card__title">Mi proyecto</h3>
-              <p class="card__text">Descripción del proyecto</p>
+              <p class="card__text">Descripción del proyecto. Explica brevemente qué problema resuelve, qué tecnologías utilizaste y qué aprendiste al desarrollarlo.</p>
               <div class="card__links">
-                <a class="card__link" href="#demo-2">Demo en vivo</a>
-                <a class="card__link" href="#repo-2">GitHub</a>
+                <a class="card__link card__link--accent" href="#" target="_blank" rel="noopener noreferrer">↗ Demo en vivo</a>
+                <a class="card__link" href="https://github.com/" target="_blank" rel="noopener noreferrer">◉ GitHub</a>
               </div>
             </div>
           </article>
@@ -77,9 +97,11 @@
     <footer class="footer" id="contacto">
       <h2 class="footer__title">Contacto</h2>
       <a class="footer__email" href="mailto:student@tripleten.com">student@tripleten.com</a>
-      <ul class="footer__socials">
-        <li><a href="#linkedin"><img src="./images/Social Icons/Linkedin/Negative.svg" alt="LinkedIn" /></a></li>
-        <li><a href="#facebook"><img src="./images/Social Icons/Facebook/Negative.svg" alt="Facebook" /></a></li>
+      <ul class="footer__socials" aria-label="Redes sociales">
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="./images/Social Icons/Linkedin/Negative.svg" alt=""></a></li>
+        <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a></li>
       </ul>
     </footer>
   </div>
